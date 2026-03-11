@@ -23,3 +23,48 @@
 			}
 		}
 	}
+
+/* Hero */
+
+	.hero {
+		text-align: center;
+		margin-bottom: (_size(element-margin) * 2);
+		padding-bottom: (_size(element-margin) * 2);
+		border-bottom: 1px solid _palette(border);
+
+		h1 {
+			font-size: 3em;
+			margin-bottom: 0.25em;
+			letter-spacing: 0.05em;
+		}
+
+		.tagline {
+			font-size: 1.25em;
+			color: _palette(accent1);
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			margin-bottom: 1em;
+		}
+
+		.bio {
+			max-width: 36em;
+			margin: 0 auto;
+			color: _palette(fg);
+			line-height: 1.8;
+		}
+	}
+
+	.section-title {
+		font-size: 0.9em;
+		letter-spacing: 0.3em;
+		color: _palette(fg);
+		opacity: 0.8;
+		margin-bottom: 1.5em !important;
+	}
+
+	.game-meta {
+		color: _palette(fg);
+		opacity: 0.85;
+		font-size: 0.95em;
+		margin: -0.5em 0 1.5em 0 !important;
+	}

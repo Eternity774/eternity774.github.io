@@ -21,8 +21,9 @@
 		max-width: 80%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
-		background: _palette(fg);
-		color: _palette(bg);
+		background: _palette(bg-accent);
+		color: _palette(fg-accent);
+		border-left: 1px solid _palette(border);
 		cursor: default;
 		visibility: hidden;
 		z-index: _misc(z-index-base) + 2;
