@@ -1,1 +1,9 @@
-theme: jekyll-theme-minimal
+title: Roman Shabalinski — Game Developer
+collections:
+  games:
+    output: true
+    permalink: /:name.html
+exclude:
+  - index.md
+  - elements.html
+  - generic.html

@@ -1,112 +1,35 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Roman Shabalinski — Game Developer</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/theme-dark.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
+---
+layout: default
+title: Game Developer
+home: true
+---
+<header class="hero">
+	<h1>Roman Shabalinski</h1>
+	<p class="tagline">Unity Developer & Game Designer</p>
+	<p class="bio">I create mobile and PC games — from puzzle runners to action roguelikes. Focused on tight gameplay, clean design, and memorable experiences.</p>
+</header>
 
-			<header id="header">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#menu">Menu</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
+{% for c in site.data.career.work %}
+<section class="company">
+	<div class="company-head">
+		<h2 class="section-title">{{ c.company }}</h2>
+		<span class="company-years">{{ c.years }}</span>
+	</div>
+	{% if c.games.size > 0 %}
+	<section class="tiles">
+		{%- for slug in c.games %}{% include tile.html slug=slug style=forloop.index %}{% endfor %}
+	</section>
+	{% else %}
+	<p class="company-note">{{ c.note }}</p>
+	{% endif %}
+</section>
+{% endfor %}
 
-			<nav id="menu">
-				<h2>Menu</h2>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="driftsurvivors.html">Drift Survivors</a></li>
-					<li><a href="popmaze.html">Pop Maze!</a></li>
-					<li><a href="popgo.html">Pop GO!</a></li>
-					<li><a href="likestar.html">Like Star!</a></li>
-				</ul>
-			</nav>
-
-			<div id="main">
-				<div class="inner">
-					<header class="hero">
-						<h1>Roman Shabalinski</h1>
-						<p class="tagline">Unity Developer & Game Designer</p>
-						<p class="bio">I create mobile and PC games — from puzzle runners to action roguelikes. Focused on tight gameplay, clean design, and memorable experiences.</p>
-					</header>
-
-					<h2 class="section-title">Games</h2>
-					<section class="tiles">
-						<article class="style1 tile-featured">
-							<span class="image">
-								<img src="images/drift_survivors_main.png" alt="Drift Survivors" />
-							</span>
-							<a href="driftsurvivors.html">
-								<h2>Drift Survivors</h2>
-								<div class="content">
-									<p>Top-down car combat meets survivor roguelike.</p>
-								</div>
-							</a>
-						</article>
-						<article class="style2">
-							<span class="image">
-								<img src="images/popmazelogo.png" alt="Pop Maze!" />
-							</span>
-							<a href="popmaze.html">
-								<h2>Pop Maze!</h2>
-								<div class="content">
-									<p>Grow your man-snake running through maze.</p>
-								</div>
-							</a>
-						</article>
-						<article class="style3">
-							<span class="image">
-								<img src="images/popgologo.png" alt="Pop GO!" />
-							</span>
-							<a href="popgo.html">
-								<h2>Pop GO!</h2>
-								<div class="content">
-									<p>Collect spheres to fill pop it.</p>
-								</div>
-							</a>
-						</article>
-						<article class="style4">
-							<span class="image">
-								<img src="images/likestarlogo.png" alt="Like Star!" />
-							</span>
-							<a href="likestar.html">
-								<h2>Like Star!</h2>
-								<div class="content">
-									<p>Classic runner with social network theme.</p>
-								</div>
-							</a>
-						</article>
-					</section>
-				</div>
-			</div>
-
-			<footer id="footer">
-				<div class="inner">
-					<section class="contact-section">
-						<h2>Contact</h2>
-						<div class="contact-content">
-							<a href="mailto:eternity774@gmail.com" class="contact-link">eternity774@gmail.com</a>
-							<a href="https://www.linkedin.com/in/roman-shabalinsky-34aa56113/" class="button primary">LinkedIn</a>
-						</div>
-					</section>
-				</div>
-			</footer>
-		</div>
-
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
-</html>
+<section class="company">
+	<div class="company-head">
+		<h2 class="section-title">{{ site.data.career.personal.title }}</h2>
+	</div>
+	<section class="tiles">
+		{%- for slug in site.data.career.personal.games %}{% include tile.html slug=slug style=forloop.index %}{% endfor %}
+	</section>
+</section>

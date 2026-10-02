@@ -367,3 +367,35 @@ h1, h2, h3, h4, h5, h6 { color: #e8e8f0 !important; }
 .box {
 	border-color: #2a2a32 !important;
 }
+
+/* Company sections on the home page */
+.company { margin-bottom: 3.5em; }
+.company-head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 1em;
+	border-bottom: 1px solid #2a2a32;
+	margin-bottom: 1.5em;
+}
+.company-head .section-title { margin-bottom: 0.75em !important; }
+.company-years {
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 0.9em;
+	color: #e63950;
+}
+.company-note { opacity: 0.7; font-style: italic; }
+.tile-year {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	padding: 0.2em 0.6em;
+	background: rgba(0, 0, 0, 0.55);
+	border-radius: 3px;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 0.75em;
+	color: #e8e8f0;
+	z-index: 3;
+}
+.store-buttons .button { margin: 0 0.5em 0.5em 0; }
+.store-buttons .button .icon:before { margin-right: 0.3em; }

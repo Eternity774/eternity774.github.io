@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p class="game-meta">{{ page.genre }} • {{ page.years }} • {{ page.studio }}</p>
+{% if page.hero %}<span class="image main"><img src="{{ page.hero | relative_url }}" alt="{{ page.title }}" /></span>{% endif %}
+
+<h2>Description</h2>
+{{ content }}
+
+{% if page.stores %}
+<p class="store-buttons">
+	{%- for s in page.stores %}
+	<a href="{{ s.url }}" class="button{% unless s.secondary %} primary{% endunless %}"><span class="icon brands {{ s.icon }}"></span> {{ s.label }}</a>
+	{%- endfor %}
+</p>
+{% endif %}
+
+{% if page.role or page.contribution %}
+<h2>My role</h2>
+{% if page.role %}<p>{{ page.role }}, {{ page.studio }}, {{ page.years }}.</p>{% endif %}
+{% if page.contribution %}<ul>{% for c in page.contribution %}<li>{{ c }}</li>{% endfor %}</ul>{% endif %}
+{% endif %}
+
+{% if page.youtube %}
+<div class="video-section">
+	<h2>Trailer</h2>
+	<div class="video-wrapper video-16x9">
+		<iframe src="https://www.youtube-nocookie.com/embed/{{ page.youtube }}" title="{{ page.title }} - YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+	</div>
+</div>
+{% endif %}
+
+{% if page.clips %}
+<div class="video-section">
+	<h2>Gameplay</h2>
+	<div class="{% if page.clips_loop %}gif-videos{% endif %}">
+		{%- for c in page.clips %}
+		<div class="video-wrapper video-16x9">
+			{% if page.clips_loop %}<video autoplay loop muted playsinline>{% else %}<video controls>{% endif %}
+				<source src="{{ c | relative_url }}" type="video/mp4">
+			</video>
+		</div>
+		{%- endfor %}
+	</div>
+</div>
+{% endif %}
+
+{% if page.screenshots %}
+<h2>Screenshots</h2>
+<div class="gallery{% if page.screenshots.size == 6 %} gallery-6{% endif %}" data-gallery>
+	<div class="gallery-grid">
+		{%- for s in page.screenshots %}
+		<a href="{{ s | relative_url }}" class="gallery-item" data-lightbox><img src="{{ s | relative_url }}" alt="{{ page.title }} screenshot" /></a>
+		{%- endfor %}
+	</div>
+</div>
+{% endif %}

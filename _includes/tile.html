@@ -1,0 +1,15 @@
+{%- assign g = site.games | where: "slug", include.slug | first -%}
+{%- if g -%}
+<article class="style{{ include.style }}{% if g.featured %} tile-featured{% endif %}">
+	<span class="image">
+		<img src="{{ g.icon | default: '/images/placeholder.svg' | relative_url }}" alt="{{ g.title }}" />
+	</span>
+	<a href="{{ g.url | relative_url }}">
+		<h2>{{ g.title }}</h2>
+		<div class="content">
+			<p>{{ g.tagline }}</p>
+		</div>
+		<span class="tile-year">{{ g.years }}</span>
+	</a>
+</article>
+{%- endif -%}

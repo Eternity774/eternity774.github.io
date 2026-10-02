@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>{% if page.title %}{{ page.title }} — {% endif %}Roman Shabalinski</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+		<link rel="stylesheet" href="{{ '/assets/css/theme-dark.css' | relative_url }}" />
+		<noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<header id="header">
+				<div class="inner">
+					<nav>
+						<ul>
+							{% unless page.home %}<li><a href="{{ '/' | relative_url }}">← Back</a></li>{% endunless %}
+							<li><a href="#menu">Menu</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			{% include menu.html %}
+
+			<div id="main">
+				<div class="inner">
+					{{ content }}
+				</div>
+			</div>
+
+			<footer id="footer">
+				<div class="inner">
+					<section class="contact-section">
+						<h2>Contact</h2>
+						<div class="contact-content">
+							<a href="mailto:eternity774@gmail.com" class="contact-link">eternity774@gmail.com</a>
+							<a href="https://www.linkedin.com/in/roman-shabalinsky-34aa56113/" class="button primary">LinkedIn</a>
+						</div>
+					</section>
+				</div>
+			</footer>
+		</div>
+
+		<div id="lightbox" class="lightbox" aria-hidden="true">
+			<button class="lightbox-close" aria-label="Close"><span aria-hidden="true">×</span></button>
+			<img src="" alt="" />
+		</div>
+
+		<script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/browser.min.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/breakpoints.min.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/util.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+		<script src="{{ '/assets/js/gallery.js' | relative_url }}"></script>
+	</body>
+</html>
