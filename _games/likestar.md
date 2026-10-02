@@ -4,7 +4,9 @@ title: Like Star!
 tagline: Classic runner with social network theme.
 genre: Hyper-casual runner
 years: 2022
-studio: Pet project
+studio: SayGames (Prototype Team)
+tag: Prototype team
+portrait: true
 icon: /images/likestarlogo.png
 hero: /images/LikeStarFG.png
 screenshots: [/images/likerunnerscreenshot1.png, /images/likerunnerscreenshot2.png, /images/likerunnerscreenshot3.png, /images/likerunnerscreenshot4.png, /images/likerunnerscreenshot5.png, /images/likerunnerscreenshot6.png, /images/likerunnerscreenshot7.png, /images/likerunnerscreenshot8.png]

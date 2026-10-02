@@ -4,7 +4,9 @@ title: Pop Maze!
 tagline: Grow your man-snake running through maze.
 genre: Hyper-casual puzzle
 years: 2022
-studio: Pet project
+studio: SayGames (Prototype Team)
+tag: Prototype team
+portrait: true
 icon: /images/popmazelogo.png
 hero: /images/popmazefeature.png
 clips: [/videos/popmazegameplay1.mp4]

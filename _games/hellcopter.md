@@ -6,6 +6,8 @@ genre: Hyper-casual • 3D shooter
 years: 2021 – 2023
 studio: SayGames
 role: Unity Developer
+portrait: true
+screenshots: [/images/hellcopterscreenshot1.jpg, /images/hellcopterscreenshot2.jpg, /images/hellcopterscreenshot3.jpg, /images/hellcopterscreenshot4.jpg, /images/hellcopterscreenshot5.jpg, /images/hellcopterscreenshot6.jpg, /images/hellcopterscreenshot7.jpg]
 icon: /images/hellcopterlogo.png
 stores:
   - { label: Google Play, icon: fa-google-play, url: "https://play.google.com/store/apps/details?id=com.gamepie.airpolice" }

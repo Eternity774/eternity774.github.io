@@ -4,7 +4,9 @@ title: Pop GO!
 tagline: Collect spheres to fill pop it.
 genre: Hyper-casual runner
 years: 2022
-studio: Pet project
+studio: SayGames (Prototype Team)
+tag: Prototype team
+portrait: true
 icon: /images/popgologo.png
 hero: /images/popgofeaturegraphic.png
 clips: [/videos/popgocgameplay.mp4]

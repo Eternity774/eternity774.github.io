@@ -6,6 +6,8 @@ genre: Hyper-casual • 3D shooter
 years: 2021 – 2023
 studio: SayGames
 role: Unity Developer
+portrait: true
+screenshots: [/images/heliescapescreenshot1.jpg, /images/heliescapescreenshot2.jpg, /images/heliescapescreenshot3.jpg, /images/heliescapescreenshot4.jpg, /images/heliescapescreenshot5.jpg, /images/heliescapescreenshot6.jpg, /images/heliescapescreenshot7.jpg]
 icon: /images/heliescapelogo.png
 stores:
   - { label: Google Play, icon: fa-google-play, url: "https://play.google.com/store/apps/details?id=com.rescue.agent" }

@@ -6,6 +6,8 @@ genre: Hyper-casual • 3D shooter
 years: 2021 – 2023
 studio: SayGames
 role: Unity Developer
+portrait: true
+screenshots: [/images/helimonstersscreenshot1.jpg, /images/helimonstersscreenshot2.jpg, /images/helimonstersscreenshot3.jpg, /images/helimonstersscreenshot4.jpg, /images/helimonstersscreenshot5.jpg, /images/helimonstersscreenshot6.jpg]
 icon: /images/helimonsterslogo.png
 stores:
   - { label: Google Play, icon: fa-google-play, url: "https://play.google.com/store/apps/details?id=com.heli.monsters" }
