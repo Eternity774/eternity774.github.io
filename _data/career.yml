@@ -1,3 +1,5 @@
+featured: driftsurvivors   # shown full-width above the company groups
+
 # Newest first. `games` are slugs of files in _games/ (file name without .md).
 # Pet projects are listed under the period when they were made.
 work:
@@ -5,7 +7,7 @@ work:
     role: Unity Developer
     years: 2024 – 2026
     location: Warsaw
-    games: [solitairegrandharvest, driftsurvivors]
+    games: [solitairegrandharvest]
 
   - company: SayGames
     role: Unity Developer

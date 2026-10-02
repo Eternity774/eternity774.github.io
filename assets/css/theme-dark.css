@@ -369,14 +369,13 @@ h1, h2, h3, h4, h5, h6 { color: #e8e8f0 !important; }
 }
 
 /* Company sections on the home page */
-.company { margin-bottom: 3.5em; }
+.company { margin-bottom: 4em; }
 .company-head {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
 	gap: 1em;
 	border-bottom: 1px solid #2a2a32;
-	margin-bottom: 1.5em;
 }
 .company-head .section-title { margin-bottom: 0.75em !important; }
 .company-years {
@@ -407,3 +406,6 @@ h1, h2, h3, h4, h5, h6 { color: #e8e8f0 !important; }
 .gallery.gallery-portrait .gallery-item {
 	aspect-ratio: 9 / 17;
 }
+
+.tiles.featured { margin-bottom: 4em; }
+.tiles article > a h2 { text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75); }

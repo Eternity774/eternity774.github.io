@@ -2,6 +2,8 @@
 	<h2>Menu</h2>
 	<ul>
 		<li><a href="{{ '/' | relative_url }}">Home</a></li>
+		{%- assign f = site.games | where: "slug", site.data.career.featured | first %}
+		<li><a href="{{ f.url | relative_url }}">{{ f.title }}</a></li>
 		{%- for c in site.data.career.work %}{% for slug in c.games %}
 		{%- assign g = site.games | where: "slug", slug | first %}
 		<li><a href="{{ g.url | relative_url }}">{{ g.title }}</a></li>

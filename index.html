@@ -9,6 +9,10 @@ home: true
 	<p class="bio">I create mobile and PC games — from puzzle runners to action roguelikes. Focused on tight gameplay, clean design, and memorable experiences.</p>
 </header>
 
+<section class="tiles featured">
+	{%- include tile.html slug=site.data.career.featured style=1 %}
+</section>
+
 {% for c in site.data.career.work %}
 <section class="company">
 	<div class="company-head">
