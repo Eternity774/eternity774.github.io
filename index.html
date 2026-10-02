@@ -24,12 +24,3 @@ home: true
 	{% endif %}
 </section>
 {% endfor %}
-
-<section class="company">
-	<div class="company-head">
-		<h2 class="section-title">{{ site.data.career.personal.title }}</h2>
-	</div>
-	<section class="tiles">
-		{%- for slug in site.data.career.personal.games %}{% include tile.html slug=slug style=forloop.index %}{% endfor %}
-	</section>
-</section>

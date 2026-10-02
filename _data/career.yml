@@ -1,16 +1,17 @@
 # Newest first. `games` are slugs of files in _games/ (file name without .md).
+# Pet projects are listed under the period when they were made.
 work:
   - company: Playtika
     role: Unity Developer
     years: 2024 – 2026
     location: Warsaw
-    games: [solitairegrandharvest]
+    games: [solitairegrandharvest, driftsurvivors]
 
   - company: SayGames
     role: Unity Developer
     years: 2021 – 2023
     location: Warsaw
-    games: [helicopterescape, hellcopter, helimonsters, bravemerge]
+    games: [helicopterescape, hellcopter, helimonsters, bravemerge, popgo, popmaze, likestar]
 
   - company: Primeta Games
     role: Unity Developer
@@ -18,7 +19,3 @@ work:
     location: Minsk
     note: No published projects.
     games: []
-
-personal:
-  title: Pet projects
-  games: [driftsurvivors, popgo, popmaze, likestar]

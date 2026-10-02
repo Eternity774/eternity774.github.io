@@ -48,7 +48,7 @@ layout: default
 
 {% if page.screenshots %}
 <h2>Screenshots</h2>
-<div class="gallery{% if page.screenshots.size == 6 %} gallery-6{% endif %}" data-gallery>
+<div class="gallery{% if page.portrait %} gallery-portrait{% elsif page.screenshots.size == 6 %} gallery-6{% endif %}" data-gallery>
 	<div class="gallery-grid">
 		{%- for s in page.screenshots %}
 		<a href="{{ s | relative_url }}" class="gallery-item" data-lightbox><img src="{{ s | relative_url }}" alt="{{ page.title }} screenshot" /></a>

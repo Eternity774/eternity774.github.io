@@ -5,6 +5,9 @@ tagline: Merge peasants into elite knights to defend your base.
 genre: Merge • Strategy • Defense
 years: 2021 – 2023
 studio: SayGames
+icon: /images/bravemergelogo.jpg
+portrait: true
+screenshots: [/images/bravemergescreenshot1.jpg, /images/bravemergescreenshot2.jpg, /images/bravemergescreenshot3.jpg, /images/bravemergescreenshot4.jpg, /images/bravemergescreenshot5.jpg]
 role: Unity Developer
 stores:
   - { label: Google Play, icon: fa-google-play, url: "https://play.google.com/store/apps/details?id=com.brave.merge" }

@@ -5,7 +5,6 @@ tagline: Top-down car combat meets survivor roguelike.
 genre: Top-down car combat • Survivor roguelike
 years: 2025
 studio: Pet project
-featured: true
 icon: /images/drift_survivors_main.png
 hero: /images/store_capsule_main.png
 youtube: -xOnX1FDHmo

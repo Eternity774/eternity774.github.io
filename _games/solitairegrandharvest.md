@@ -5,6 +5,9 @@ tagline: Live-service TriPeaks solitaire on the Grand Farm.
 genre: Card • TriPeaks solitaire • Live service
 years: 2024 – 2026
 studio: Playtika
+icon: /images/solitairelogo.jpg
+portrait: true
+screenshots: [/images/solitairescreenshot1.jpg, /images/solitairescreenshot2.jpg, /images/solitairescreenshot3.jpg, /images/solitairescreenshot4.jpg, /images/solitairescreenshot5.jpg, /images/solitairescreenshot6.jpg]
 role: Unity Developer
 stores:
   - { label: Google Play, icon: fa-google-play, url: "https://play.google.com/store/apps/details?id=net.supertreat.solitaire" }

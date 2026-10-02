@@ -9,7 +9,7 @@
 		<div class="content">
 			<p>{{ g.tagline }}</p>
 		</div>
-		<span class="tile-year">{{ g.years }}</span>
+		<span class="tile-year">{{ g.years }}{% if g.studio == 'Pet project' %} · Pet project{% endif %}</span>
 	</a>
 </article>
 {%- endif -%}
